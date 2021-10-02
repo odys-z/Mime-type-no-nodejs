@@ -28,7 +28,7 @@ test
 
 ```
     npm install
-	npm test
+    npm test
 ```
 
 Testing code snippet:
@@ -40,5 +40,5 @@ Testing code snippet:
 
     it('type2mime', () => {
         assert.equal(Mime.lookup('png'), 'image/png', '00.2 --png');
-	});
+    });
 ```
