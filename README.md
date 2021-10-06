@@ -1,3 +1,5 @@
+ ![npm](https://img.shields.io/npm/v/mime-types-no-nodejs?logo=npm)
+
 # About
 
 Convert mime type to and from document type.
