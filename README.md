@@ -1,3 +1,5 @@
+ [![npm](https://img.shields.io/npm/v/mime-types-no-nodejs?logo=npm)](https://npmjs.org/package/mime-types-no-nodejs)
+
 # About
 
 Convert mime type to and from document type.
@@ -14,7 +16,7 @@ Source modified from [jshttp/mime-types](https://github.com/jshttp/mime-types)
 
 Because it's worth to try without Node.js dependency.
 
-See [#50](https://github.com/jshttp/mime-types/issues/50#issuecomment-442916069)
+See [#50](https://github.com/jshttp/mime-types/issues/50#issuecomment-442916069).
 
 # Qick start
 
@@ -31,27 +33,7 @@ test
     npm test
 ```
 
-example
-
-```
-    import Mime from 'mime-types-no-nodejs';
-```
-
-Testing code snippet:
-
-```
-    import Mime from '../index';
-
-    it('mime2type', () => {
-        assert.equal(Mime.extension('image/png;base64'), 'png', '1 png');
-    });
-
-    it('type2mime', () => {
-        assert.equal(Mime.lookup('png'), 'image/png', '00.2 --png');
-    });
-```
-
-API
+# API
 
 - lookup()
 
@@ -75,3 +57,21 @@ Lookup the MIME type for a file path/extension.
     function extension (type);
 ```
 Get the default extension for a MIME type.
+```
+    import Mime from 'mime-types-no-nodejs';
+```
+
+Testing code snippet:
+
+```
+    // test/no-node.js
+    import Mime from '../index';
+
+    it('mime2type', () => {
+        assert.equal(Mime.extension('image/png;base64'), 'png');
+    });
+
+    it('type2mime', () => {
+        assert.equal(Mime.lookup('png'), 'image/png');
+    });
+```
