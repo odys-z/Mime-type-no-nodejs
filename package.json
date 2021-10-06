@@ -1,6 +1,6 @@
 {
   "name": "mime-types-no-nodejs",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "Mime-types without node.js (see it's #50)",
   "main": "index.js",
   "scripts": {

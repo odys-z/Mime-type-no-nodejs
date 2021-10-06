@@ -35,7 +35,13 @@ test
 
 # API
 
+```
+    import Mime from 'mime-types-no-nodejs';
+```
+
 - lookup()
+
+Lookup the MIME type for a file path/extension.
 
 ```
     /**
@@ -45,9 +51,9 @@ test
     function lookup (path);
 ```
 
-Lookup the MIME type for a file path/extension.
-
 - extension()
+
+Get the default extension for a MIME type.
 
 ```
     /**
@@ -55,10 +61,6 @@ Lookup the MIME type for a file path/extension.
      * @return {boolean|string}
      */
     function extension (type);
-```
-Get the default extension for a MIME type.
-```
-    import Mime from 'mime-types-no-nodejs';
 ```
 
 Testing code snippet:
