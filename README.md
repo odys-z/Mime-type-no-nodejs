@@ -1,4 +1,4 @@
- ![npm](https://img.shields.io/npm/v/mime-types-no-nodejs?logo=npm)
+ [![npm](https://img.shields.io/npm/v/mime-types-no-nodejs?logo=npm)](https://npmjs.org/package/mime-types-no-nodejs)
 
 # About
 
