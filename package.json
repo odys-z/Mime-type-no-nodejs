@@ -8,8 +8,7 @@
     "test": "webpack-cli --config mocha.config.js && mocha dist/testBundle.js "
   },
   "keywords": [
-    "mime-types",
-    "node.js"
+    "mime-types"
   ],
   "author": "Ody Zhou",
   "license": "MIT",
