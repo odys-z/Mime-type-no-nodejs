@@ -10,7 +10,7 @@ Reference:
 
 ## Credits
 
-Source modified from [jshttp/mime-types](https://github.com/jshttp/mime-types)
+Source modified from [jshttp/mime-types](https://github.com/jshttp/mime-types).
 
 ## Why?
 
