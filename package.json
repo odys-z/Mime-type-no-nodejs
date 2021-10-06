@@ -13,7 +13,9 @@
   ],
   "author": "Ody Zhou",
   "license": "MIT",
+  "homepage": "https://github.com/odys-z/Mime-type-no-nodejs/blob/main/README.md",
   "devDependencies": {
+    "chai": "^4.3.4",
     "mocha": "^9.1.2"
   }
 }
