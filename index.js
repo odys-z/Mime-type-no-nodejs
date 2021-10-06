@@ -13,7 +13,6 @@
  */
 
 var db = require('mime-db')
-// var extname = require('path').extname
 
 function extname(pth) {
 	let reg = /\.([\w\d]+)\s*$/;
@@ -80,7 +79,6 @@ function charset (type) {
  * @param {string} str
  * @return {boolean|string}
  */
-
 function contentType (str) {
   // TODO: should this even be in this module?
   if (!str || typeof str !== 'string') {
@@ -110,7 +108,6 @@ function contentType (str) {
  * @param {string} type
  * @return {boolean|string}
  */
-
 function extension (type) {
   if (!type || typeof type !== 'string') {
     return false
@@ -135,17 +132,12 @@ function extension (type) {
  * @param {string} path
  * @return {boolean|string}
  */
-
 function lookup (path) {
   if (!path || typeof path !== 'string') {
     return false
   }
 
-  // get the extension ("ext" or ".ext" or full path)
-  // var extension = extname('x.' + path)
-  //   .toLowerCase()
-  //   .substr(1)
-  var extension = extname('x.' + path).toLowerCase();
+  let extension = extname('x.' + path).toLowerCase();
 
   if (!extension) {
     return false
@@ -158,7 +150,6 @@ function lookup (path) {
  * Populate the extensions and types maps.
  * @private
  */
-
 function populateMaps (extensions, types) {
   // source preference (least -> most)
   var preference = ['nginx', 'apache', undefined, 'iana']

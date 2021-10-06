@@ -28,17 +28,50 @@ test
 
 ```
     npm install
-	npm test
+    npm test
+```
+
+example
+
+```
+    import Mime from 'mime-types-no-nodejs';
 ```
 
 Testing code snippet:
 
 ```
+    import Mime from '../index';
+
     it('mime2type', () => {
         assert.equal(Mime.extension('image/png;base64'), 'png', '1 png');
     });
 
     it('type2mime', () => {
         assert.equal(Mime.lookup('png'), 'image/png', '00.2 --png');
-	});
+    });
 ```
+
+API
+
+- lookup()
+
+```
+    /**
+     * @param {string} path
+     * @return {boolean|string} false when failed
+     */
+    function lookup (path);
+```
+
+Lookup the MIME type for a file path/extension.
+
+- extension()
+
+```
+    /**
+     * @param {string} type
+     * @return {boolean|string}
+     */
+    function extension (type);
+```
+Get the default extension for a MIME type.
