@@ -10,7 +10,7 @@ Reference:
 
 ## Credits
 
-Source modified from [jshttp/mime-types](https://github.com/jshttp/mime-types)
+Source modified from [jshttp/mime-types](https://github.com/jshttp/mime-types).
 
 ## Why?
 
@@ -20,13 +20,13 @@ See [#50](https://github.com/jshttp/mime-types/issues/50#issuecomment-442916069)
 
 # Qick start
 
-install
+install dependency
 
 ```
     npm install mime-types-no-node
 ```
 
-test
+run test (with source)
 
 ```
     npm install
@@ -58,7 +58,7 @@ Get the default extension for a MIME type.
 ```
     /**
      * @param {string} type
-     * @return {boolean|string}
+     * @return {boolean|string} doc type or false if failed
      */
     function extension (type);
 ```
