@@ -14,9 +14,11 @@ Source modified from [jshttp/mime-types](https://github.com/jshttp/mime-types).
 
 ## Why?
 
-Because it's worth to try without Node.js dependency.
+1. Removed Node.js dependency.
 
 See [#50](https://github.com/jshttp/mime-types/issues/50#issuecomment-442916069).
+
+2. Re-write in typescript.
 
 # Qick start
 

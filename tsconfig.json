@@ -1,0 +1,17 @@
+{
+	"compilerOptions": {
+		"allowJs": true,
+		// Generate d.ts files
+		"declaration": true,
+		"experimentalDecorators": true,
+		"esModuleInterop": true,
+		"outDir": "dist"
+	},
+	"exclude": [
+        "node_modules",
+		"**/*.config.js",
+		"test",
+        "./typings/**/*"
+    ],
+	"allowSyntheticDefaultImports": true
+}
