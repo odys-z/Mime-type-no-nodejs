@@ -25,7 +25,7 @@ See [#50](https://github.com/jshttp/mime-types/issues/50#issuecomment-442916069)
 install dependency
 
 ```
-    npm install mime-types-no-node
+    npm install mime-types-no-nodejs
 ```
 
 run test (with source)
@@ -43,7 +43,7 @@ run test (with source)
 
 - lookup()
 
-Lookup the MIME type for a file path/extension.
+Lookup the MIME type for a file / path extension.
 
 ```
     /**
