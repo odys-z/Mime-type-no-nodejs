@@ -16,6 +16,7 @@
   "homepage": "https://github.com/odys-z/Mime-type-no-nodejs/blob/main/README.md",
   "devDependencies": {
     "@babel/preset-typescript": "^7.15.0",
+    "@types/mime-db": "^1.43.1",
     "chai": "^4.3.4",
     "mocha": "^9.1.3",
     "typescript": "^4.4.4",

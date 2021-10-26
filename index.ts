@@ -1,4 +1,10 @@
-/** @module 'mime-type-no-nodejs'; */
+/** @module 'mime-type-no-nodejs';
+ * 
+ * Credits: mime-types
+ * Copyright(c) 2014 Jonathan Ong
+ * Copyright(c) 2015 Douglas Christopher Wilson
+ * MIT Licensed
+ */
 
 import db from 'mime-db';
 
