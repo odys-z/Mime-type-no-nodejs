@@ -4,6 +4,7 @@
 		// Generate d.ts files
 		"declaration": true,
 		"experimentalDecorators": true,
+		"allowSyntheticDefaultImports": true,
 		"esModuleInterop": true,
 		"outDir": "dist"
 	},
@@ -12,6 +13,5 @@
 		"**/*.config.js",
 		"test",
         "./typings/**/*"
-    ],
-	"allowSyntheticDefaultImports": true
+    ]
 }

@@ -1,6 +1,5 @@
 
-import chai from 'chai';
-import { expect, assert } from 'chai';
+import { assert } from 'chai';
 import Mime from '../index';
 
 describe('[case 1. regex]', () => {
