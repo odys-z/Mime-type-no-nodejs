@@ -1,8 +1,10 @@
 /** @module 'mime-type-no-nodejs';
  * 
  * Credits: mime-types
+ * 
  * Copyright(c) 2014 Jonathan Ong
  * Copyright(c) 2015 Douglas Christopher Wilson
+ * Copyright(c) 2021 Ody Zhou
  * MIT Licensed
  */
 
@@ -72,8 +74,8 @@ function populateMaps (extensions: object, types: object) {
 /**
  * Get the default charset for a MIME type.
  *
- * @param {string} type
- * @return {undefined|string}
+ * @param type mime
+ * @return charset
  */
 function charset(type: string): undefined | string {
   if (!type || typeof type !== 'string') {
@@ -96,8 +98,8 @@ function charset(type: string): undefined | string {
 /**
  * Create a full Content-Type header given a MIME type or extension.
  *
- * @param {string} str
- * @return {undefined|string}
+ * @param str mime type
+ * @return header for the type
  */
 function contentType(str: string): string | undefined {
   // TODO: should this even be in this module?
@@ -126,8 +128,8 @@ function contentType(str: string): string | undefined {
  * 
  * Get the default extension for a MIME type.
  *
- * @param {string} type
- * @return {undefined|string}
+ * @param type doctype
+ * @return mime type
  */
 function extension(type: string): undefined | string {
   if (!type || typeof type !== 'string') {
@@ -150,8 +152,8 @@ function extension(type: string): undefined | string {
 /**
  * Lookup the MIME type for a file path/extension.
  *
- * @param {string} path
- * @return {string|undefined}
+ * @param path doc path
+ * @return mime type
  */
 function lookup (path: string): string | undefined {
   if (!path || typeof path !== 'string') {
