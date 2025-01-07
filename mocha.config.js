@@ -5,7 +5,7 @@ var webpack = require('webpack');
 
 var config = {
   mode: 'development',
-  entry: './test/no-node.js',
+  entry: './test/no-node.ts',
   output: {
     filename: 'testBundle.js'
   },
@@ -14,16 +14,27 @@ var config = {
   plugins: [ ],
 
   resolve: {
-	extensions: ['.js']
+	extensions: ['.ts', '.js']
   },
 
   module: {
 	rules: [
-		{   test: /\.js$/,
+		{ test: /\.ts$/,
 			loader: 'babel-loader',
 			options: {
-			  presets: [] }
+			  presets: [
+          '@babel/preset-typescript',
+          '@babel/preset-env' 
+        ] }
 		},
+		{ test: /\.js$/,
+			loader: 'babel-loader',
+			options: {
+			  presets: [
+          '@babel/preset-env' 
+        ] }
+		},
+
 	]
   }
 };
